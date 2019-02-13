@@ -11,7 +11,7 @@ namespace: "alikins"
 name: "collection_inspect"
 
 # semantic versioning compliant version designation
-version: "0.0.4"
+version: "0.0.5"
 
 # a list of the collection's content authors: 'Full Name <email> (http://site) @nicks:irc/im/site#channel'
 authors:
