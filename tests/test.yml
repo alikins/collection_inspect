@@ -1,4 +1,5 @@
 ---
 - hosts: localhost
+  gather_facts: false
   roles:
     - alikins.collection_inspect.test_collection_inspect
