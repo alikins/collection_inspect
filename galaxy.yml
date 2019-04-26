@@ -1,6 +1,6 @@
 namespace: "alikins"
 name: "collection_inspect"
-version: "0.0.26"
+version: "0.0.27"
 license:
   - MIT
 readme: "README.md"
