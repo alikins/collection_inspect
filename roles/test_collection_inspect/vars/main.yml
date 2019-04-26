@@ -1,0 +1,6 @@
+---
+# vars file for test_collection_inspect
+foo: "fooFooFOO"
+
+# Test having the filter plugin loaded early
+blip: "{{ foo |alikins.collection_inspect.collection_inspect }}"

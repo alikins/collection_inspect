@@ -1,0 +1,64 @@
+---
+# tasks file for test_collection_inspect
+- name: test module get_collection_inspect
+  alikins.collection_inspect.get_collection_inspect:
+    args:
+  register: get_collection_inspect_results
+
+- name: show get_collection_inspect_results
+  debug:
+    var: get_collection_inspect_results
+
+# - name: "Test collection_inspect module and module_utils loaded from alikins.collection_inspect collection"
+#   alikins.collection_inspect.collection_inspect:
+#     args:
+#   register: module_result
+
+# - name: Show collection_inspect module results
+#   debug:
+#     var: module_result
+
+- name: use debug from ansible builting
+  ansible.builtin.debug:
+    msg: "trying to use the builtin debug"
+
+- name: use debug from ansible legacy
+  ansible.legacy.debug:
+    msg: "trying to use the legacy debug"
+
+- name: use find module
+  find:
+    paths: /tmp/col_inspect_test
+    recurse: no
+
+- name: use find module builtin
+  ansible.builtin.find:
+    paths: /tmp/col_inspect_test
+    recurse: no
+
+- name: show collection_inspect filter results
+  debug:
+    msg: "{{ foo |alikins.collection_inspect.collection_inspect }}"
+
+- name: test module get_collection_inspect
+  alikins.collection_inspect.collection_inspect_no_module_utils:
+    args:
+  register: collection_inspect_with_no_module_utils_results
+
+- name: show collection_inspect_with_no_module_utils_results
+  debug:
+    var: collection_inspect_with_no_module_utils_results
+
+- name: test module collection_inspect
+  alikins.collection_inspect.collection_inspect:
+    args:
+  register: collection_inspect_results
+
+- name: show collection_inspect_results
+  debug:
+    var: collection_inspect_results
+
+# TODO: not sure if vars plugins are expected to work yet
+# - name: show vars plugins for collection_inspect
+#   debug:
+#     var: vars

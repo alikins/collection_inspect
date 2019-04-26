@@ -1,0 +1,4 @@
+---
+- hosts: localhost
+  roles:
+    - alikins.collection_inspect.test_collection_inspect
