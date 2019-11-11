@@ -1,13 +1,13 @@
 ---
 # tasks file for test_collection_inspect
-- name: test module get_collection_inspect
-  alikins.collection_inspect.get_collection_inspect:
-    args:
-  register: get_collection_inspect_results
+# - name: test module get_collection_inspect
+#   alikins.collection_inspect.get_collection_inspect:
+#     args:
+#   register: get_collection_inspect_results
 
-- name: show get_collection_inspect_results
-  debug:
-    var: get_collection_inspect_results
+# - name: show get_collection_inspect_results
+#   debug:
+#     var: get_collection_inspect_results
 
 # - name: "Test collection_inspect module and module_utils loaded from alikins.collection_inspect collection"
 #   alikins.collection_inspect.collection_inspect:
@@ -40,23 +40,23 @@
   debug:
     msg: "{{ foo |alikins.collection_inspect.collection_inspect }}"
 
-- name: test module get_collection_inspect
-  alikins.collection_inspect.collection_inspect_no_module_utils:
-    args:
-  register: collection_inspect_with_no_module_utils_results
+# - name: test module get_collection_inspect
+#   alikins.collection_inspect.collection_inspect_no_module_utils:
+#     args:
+#   register: collection_inspect_with_no_module_utils_results
 
-- name: show collection_inspect_with_no_module_utils_results
-  debug:
-    var: collection_inspect_with_no_module_utils_results
+# - name: show collection_inspect_with_no_module_utils_results
+#   debug:
+#     var: collection_inspect_with_no_module_utils_results
 
-- name: test module collection_inspect
-  alikins.collection_inspect.collection_inspect:
-    args:
-  register: collection_inspect_results
+# - name: test module collection_inspect
+#   alikins.collection_inspect.collection_inspect:
+#     args:
+#   register: collection_inspect_results
 
-- name: show collection_inspect_results
-  debug:
-    var: collection_inspect_results
+# - name: show collection_inspect_results
+#   debug:
+#     var: collection_inspect_results
 
 # TODO: not sure if vars plugins are expected to work yet
 # - name: show vars plugins for collection_inspect
