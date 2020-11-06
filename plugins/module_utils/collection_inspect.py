@@ -1,3 +1,6 @@
+from __future__ import (absolute_import, division, print_function)
+__metaclass__ = type
+
 
 def get_dunders(_globals, force_serializable=True):
     '''Pass in the dict returned from globals() from caller

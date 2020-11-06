@@ -1,6 +1,6 @@
-namespace: "alikins"
+namespace: "alikins_dumb_namespace"
 name: "collection_inspect"
-version: "0.0.118"
+version: "0.0.269"
 license:
   - MIT
 readme: README.md
@@ -9,6 +9,7 @@ authors:
 description: "A set of 'collection_inspect' plugins for debugging collection loading"
 dependencies:
 repository: https://github.com/alikins/collection_inspect
+deprecated: true
 documentation:
 homepage:
 issues:

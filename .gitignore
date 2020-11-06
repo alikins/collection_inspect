@@ -3,6 +3,10 @@
 # mazer build results
 releases/
 
+playbooks/example_playbook.yml
+test_lockfile.yml
+test_lockfile_splat.yml
+
 # artifacts of update_collection.sh
 galaxy.yml.new
 galaxy.yml.bak

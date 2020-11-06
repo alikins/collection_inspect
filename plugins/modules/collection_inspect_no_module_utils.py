@@ -61,7 +61,7 @@ def main():
         'dunders': get_dunders(globals(), force_serializable=True)
     }
     print(json.dumps(res))
-    sys.exit(0)
+    sys.exit(0)  # pylint: disable=ansible-bad-function
 
 
 if __name__ == "__main__":

@@ -15,7 +15,7 @@ DOCUMENTATION = """
 """
 
 EXAMPLES = """
-- debug: msg="This plugin: {{ lookup('collection_inspect','dummy') }} "
+- debug: msg="This plugin: Replace with real example "
 """
 
 RETURN = """
