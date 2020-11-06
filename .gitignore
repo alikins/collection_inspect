@@ -6,6 +6,9 @@ releases/
 playbooks/example_playbook.yml
 test_lockfile.yml
 test_lockfile_splat.yml
+hosts
+ansible_vars_plugins.cfg
+ansible.cfg.full
 
 # artifacts of update_collection.sh
 galaxy.yml.new
